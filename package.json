@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node-dev ./src/index.ts",
-    "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js"
+    "typeorm": "ts-node ./node_modules/typeorm/cli.js",
+    "dev": "nodemon --exec ts-node ./src/index.ts"
   },
   "author": "Simon Skoda",
   "license": "ISC",
@@ -21,6 +22,7 @@
     "@mikro-orm/mysql": "^4.5.9",
     "express": "^4.17.1",
     "mysql": "^2.18.1",
+    "nodemon": "^2.0.15",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.41",
     "typeorm-extension": "^1.0.1"

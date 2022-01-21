@@ -3,12 +3,16 @@
   "host": "localhost",
   "port": 3306,
   "username": "root",
-  "password": "root7",
-  "database": "sakila",
-  "entities": ["./src/entity/*.ts"],
-  "migrationsTableName": "custom_migration_table",
-  "migrations": [".src/migration/*.ts"],
+  "password": "Ronaldocr7",
+  "database": "gramophone",
+  "synchronize": true,
+  "loging": true,
+  "entities": ["./src/entity/**/*.ts"],
+  "migrations": [".src/migration/**/*.ts"],
+  "subscribers": ["./src/sibscriber/**/*.ts"],
   "cli": {
-      "migrationsDir": "migration"
+    "migrationsDir": "src/migration",
+    "entitiesDir": "src/entity",
+    "subscribersDir": "src/sibscriber"
   }
 }
