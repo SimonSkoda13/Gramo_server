@@ -1,9 +1,12 @@
-# Gramo_server
+# Music Project - Node.js & TypeScript RESTful API
 
-##Change ormconfig.json
+## Overview
+This project is a Node.js backend developed using TypeScript for a music application. It provides a RESTful API to interact with music data. This backend serves as the foundation for managing, retrieving, and storing music-related information.
 
-Then please run these commands
-- npm run typeorm schema:log
-- npm run typeorm schema:sync
-- npm run typeorm migration:create -n FirstRefactor
-- npm run typeorm migration:run
+## Features
+- **List Songs:** Fetch a list of all songs in the database.
+- **Get Song Details:** Retrieve detailed information about a specific song.
+- **Add New Song:** Allows users to add a new song to the database.
+- **Update Song Information:** Update details of an existing song.
+- **Delete Song:** Remove a song from the database.
+
